@@ -1,16 +1,11 @@
-on:
-  push:
-    branches:
-      - master
+name: logging-system
 
-name: Deploy String boot to Amazon EC2
-env:
-  PROJECT_NAME: action_codedeploy
+on:
+  workflow_dispatch:
 
 jobs:
-  deploy:
-    name: DEPLOY
-    runs-on: ubuntu-18.04
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
