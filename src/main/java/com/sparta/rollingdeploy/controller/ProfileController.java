@@ -27,6 +27,6 @@ public class ProfileController {
 
     @GetMapping("/hello")
     public String hello(){
-        return "Hello 제발 부탁이야 성공해줘";
+        return "Hello 제발 부탁이야";
     }
 }
